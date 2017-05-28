@@ -9,7 +9,7 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>Favorite Movies Project</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -72,7 +72,8 @@ main_page_head = '''
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
-              'frameborder': 0
+              'frameborder': 0,
+              'allowfullscreen': true
             }));
         });
         // Animate in the movies when the page loads
@@ -104,10 +105,10 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Favorite Movies Project</a>
           </div>
         </div>
       </div>

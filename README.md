@@ -1,4 +1,4 @@
-This project is a fork of ud036_StarterCode which proved the source code for a movie trailer website.
+This project is a fork of ud036_StarterCode which provided the source code for a movie trailer website.
 Python 2 is required to compile.
 To run:
 <ul><li>First make sure Python 2 is installed and up to date (tested onPython 2.7.13)</li>

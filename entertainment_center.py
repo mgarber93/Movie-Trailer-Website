@@ -3,7 +3,8 @@ import fresh_tomatoes
 
 pulp_fiction = media.Movie("Pulp Fiction",
                            1994,
-                           "Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson) are hitmen with a penchant for philosophical discussions.",
+                           "Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson) are hitmen with a" +
+                           " penchant for philosophical discussions.",
                            "https://www.gstatic.com/tv/thumb/movieposters/15684/p15684_p_v8_ac.jpg",
                            "https://www.youtube.com/watch?v=s7EdQ4FqbhY")
 
@@ -27,19 +28,20 @@ drive = media.Movie("Drive",
 
 edge_of_tomorrow = media.Movie("Edge of Tomorrow",
                                2014,
-                               "A soldier fighting aliens gets to relive the same day over and over again, the day restarting every time he dies.",
+                               "A soldier fighting aliens gets to relive the same day over and over again, " +
+                               "the day restarting every time he dies.",
                                "http://www.impawards.com/2014/posters/edge_of_tomorrow_ver11.jpg",
                                "https://www.youtube.com/watch?v=vw61gCe2oqI")
 
 seven = media.Movie("SEVEN",
                     1995,
                     "Two detectives, Mills and Somerset, hunt a serial killer.",
-                    "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNT"+
+                    "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNT" +
                     "NjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY1200_CR69,0,630,1200_AL_.jpg",
                     "https://www.youtube.com/watch?v=znmZoVkCjpI")
 
 # Each movie is grouped into a single array, which is sorted by the year that it was released.
 movies = [pulp_fiction, primer, twothousandandone, drive, edge_of_tomorrow, seven]
-movies.sort(key=lambda x: x.year_released, reverse=True)
+movies.sort(key=lambda x: x.year_released, reverse=True)  # change to false for older first
 
 fresh_tomatoes.open_movies_page(movies)
